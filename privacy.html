@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Privacy Policy for NexusRecall Beta Chrome extension">
+  <title>Privacy Policy — NexusRecall Beta</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --border: #e5e7eb;
+      --accent: #4f46e5;
+      --bg: #ffffff;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text: #f3f4f6;
+        --muted: #d1d5db;
+        --border: #374151;
+        --accent: #818cf8;
+        --bg: #111827;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
+    main {
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: 2rem 1.25rem 4rem;
+    }
+    h1 {
+      font-size: 1.875rem;
+      line-height: 1.2;
+      margin: 0 0 0.5rem;
+    }
+    .meta {
+      color: var(--muted);
+      margin-bottom: 2rem;
+      font-size: 0.95rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin: 2rem 0 0.75rem;
+      padding-top: 0.5rem;
+      border-top: 1px solid var(--border);
+    }
+    h3 {
+      font-size: 1.05rem;
+      margin: 1.25rem 0 0.5rem;
+    }
+    p, li { margin: 0.5rem 0; }
+    ul { padding-left: 1.25rem; }
+    strong { font-weight: 600; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 0.6rem 0.75rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th { background: rgba(79, 70, 229, 0.08); }
+    a { color: var(--accent); }
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.9em;
+    }
+    .note {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy for NexusRecall</h1>
+    <p class="meta"><strong>Last Updated:</strong> June 29, 2026<br><strong>Version:</strong> 0.2.x (Beta)</p>
+
+    <h2>Overview</h2>
+    <p>NexusRecall (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is a Chrome browser extension that helps you keep a <strong>private local archive</strong> of conversations you access while using supported AI assistant websites.</p>
+    <p><strong>Your saved conversation archive stays on your device.</strong> NexusRecall does not operate a cloud conversation archive, does not require an account, and <strong>does not transmit your saved conversation archive to NexusRecall servers or third-party storage services</strong>.</p>
+    <p>NexusRecall runs in your browser while you use supported AI assistant websites. Auto-save, search, export, and related features require the extension to interact with those websites in your browser. That is separate from storing your archive locally in your Chrome profile.</p>
+
+    <h2>Your Data, Your Control</h2>
+    <ul>
+      <li><strong>Local archive:</strong> Saved conversations are stored in your Chrome browser profile on this device (IndexedDB and Chrome extension storage).</li>
+      <li><strong>Export:</strong> Download your archive as JSON (Settings &rarr; Export All Data) or export individual conversations as Markdown, rich text, or print/PDF.</li>
+      <li><strong>Delete:</strong> Delete individual conversations or all local data (Settings &rarr; Privacy &amp; Data Management).</li>
+      <li><strong>Turn off auto-save:</strong> Disable auto-save for all platforms or for specific platforms at any time.</li>
+      <li><strong>Manual save:</strong> Save individual conversations yourself via keyboard shortcut or context menu.</li>
+      <li><strong>Retention:</strong> Optional automatic cleanup &mdash; off by default. When you enable it, you choose how long to keep conversations (1&ndash;365 days); older ones are deleted immediately.</li>
+      <li><strong>No NexusRecall account:</strong> No registration or login is required.</li>
+    </ul>
+
+    <h2>What We Store Locally</h2>
+    <p>When you use NexusRecall, the following data may be stored <strong>locally on your device</strong>:</p>
+    <table>
+      <thead>
+        <tr><th>Data</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Saved conversations</strong></td><td>Messages and metadata from supported platforms you access while auto-save is enabled or when you save manually</td></tr>
+        <tr><td><strong>Settings &amp; preferences</strong></td><td>Auto-save toggles, retention period, theme, notification preferences</td></tr>
+        <tr><td><strong>UI state</strong></td><td>Interface state such as selected conversation or scroll position</td></tr>
+        <tr><td><strong>Saving status metadata</strong></td><td>Local indicators used to show auto-save and storage status in Settings</td></tr>
+      </tbody>
+    </table>
+    <p>We do <strong>not</strong> operate analytics or advertising services in beta. We do <strong>not</strong> sell, rent, or share your saved conversation archive.</p>
+
+    <h2>How Saving Works</h2>
+    <p>When auto-save is enabled, NexusRecall saves conversations <strong>while you use supported AI assistant websites</strong> &mdash; for example, conversations you open or actively use on those sites. You can also save conversations yourself with <strong>manual save</strong> at any time.</p>
+    <p>NexusRecall does <strong>not</strong> offer bulk historical import of your entire account history from AI platforms. Your archive grows from conversations you access while using the extension, not from unattended background scans of accounts you have not opened.</p>
+    <p>Supported platforms (beta): ChatGPT, Claude, Gemini, Microsoft Copilot, and Perplexity.</p>
+
+    <h2>How We Use Your Data</h2>
+    <p>All use of locally stored data is to provide extension functionality:</p>
+    <ul>
+      <li><strong>Save &amp; organize</strong> conversations in your local archive</li>
+      <li><strong>Search &amp; filter</strong> your saved conversations</li>
+      <li><strong>Export</strong> conversations in supported formats</li>
+      <li><strong>Show saving status &amp; storage information</strong> in Settings</li>
+      <li><strong>Apply your retention and platform preferences</strong></li>
+    </ul>
+    <p>We do not use your saved conversations for advertising, model training, or profiling.</p>
+
+    <h2>What We Do Not Do</h2>
+    <ul>
+      <li>We do <strong>not</strong> upload your saved conversation archive to NexusRecall servers (we do not operate such servers for your archive).</li>
+      <li>We do <strong>not</strong> provide cloud sync or a NexusRecall-hosted backup of your chats.</li>
+      <li>We do <strong>not</strong> sell or share your saved conversation archive with third parties.</li>
+      <li>We do <strong>not</strong> use your conversations for advertising.</li>
+    </ul>
+
+    <h2>Network Activity</h2>
+    <p><strong>Important distinction:</strong> NexusRecall does not send your <strong>saved archive</strong> to NexusRecall servers or third-party storage services. Your browser still communicates with websites as part of normal browsing and extension operation.</p>
+    <table>
+      <thead>
+        <tr><th>Activity</th><th>What happens</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Using supported AI assistant websites</strong></td>
+          <td>Your browser communicates with those sites while you use them. NexusRecall runs locally to provide auto-save and manual save features on those pages.</td>
+        </tr>
+        <tr>
+          <td><strong>Optional feedback</strong></td>
+          <td>If you choose to submit feedback in the extension, that submission is sent to <strong>Google Forms</strong> (Google LLC). Feedback may include rating, category, free-text comments, and optional name/email you enter. <strong>Feedback is separate from your local conversation archive</strong> and is not required to use the extension.</td>
+        </tr>
+        <tr>
+          <td><strong>Export / download</strong></td>
+          <td>Files you export are saved via Chrome&rsquo;s download mechanism to locations you choose on your device.</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>We do not use third-party analytics or advertising trackers for your saved conversations.</p>
+
+    <h2>Data Storage &amp; Security</h2>
+    <h3>Local storage</h3>
+    <ul>
+      <li><strong>Conversations:</strong> Chrome IndexedDB on your device</li>
+      <li><strong>Settings &amp; lightweight metadata:</strong> <code>chrome.storage.local</code></li>
+      <li><strong>Encryption (beta):</strong> Data is stored locally in plain text within your browser profile. Protect your device and Chrome profile accordingly.</li>
+    </ul>
+    <h3>Security measures (beta)</h3>
+    <ul>
+      <li>Manifest V3 architecture with a strict Content Security Policy for extension pages</li>
+      <li>Content sanitization before rendering saved messages in the popup</li>
+      <li>Minimal host permissions limited to supported AI assistant websites (and Google Forms for optional feedback)</li>
+      <li>Dependency vulnerability monitoring in development</li>
+    </ul>
+    <h3>Access control</h3>
+    <ul>
+      <li>Only you (on this Chrome profile) can access your local archive through the extension</li>
+      <li>Uninstalling the extension removes extension-controlled local data from this profile</li>
+    </ul>
+
+    <h2>Data Retention</h2>
+    <ul>
+      <li><strong>Default:</strong> Automatic cleanup is <strong>off</strong>. Nothing is deleted by age unless you turn it on in Settings &rarr; Privacy.</li>
+      <li><strong>When enabled:</strong> Conversations older than your chosen period (1&ndash;365 days, default suggestion 90 days) are deleted <strong>immediately</strong> when you save or enable the setting.</li>
+      <li><strong>Manual deletion:</strong> Delete individual conversations or all data at any time.</li>
+      <li><strong>Uninstall:</strong> Removing the extension clears extension data from your Chrome profile.</li>
+      <li><strong>No cloud backup:</strong> We do not retain copies of your archive after local deletion.</li>
+    </ul>
+    <p><strong>Warning:</strong> Uninstalling the extension, clearing Chrome data, switching browser profiles, or losing your device may permanently remove your archive unless you have exported a backup.</p>
+
+    <h2>Permissions</h2>
+    <p>NexusRecall requests permissions needed for auto-save, manual save, search, export, and saving status features on supported sites.</p>
+    <h3>Extension permissions</h3>
+    <table>
+      <thead>
+        <tr><th>Permission</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>storage</code></td><td>Store your local archive and settings on device</td></tr>
+        <tr><td><code>activeTab</code></td><td>Interact with the AI site tab you are using</td></tr>
+        <tr><td><code>scripting</code></td><td>Run extension logic on supported AI assistant websites only</td></tr>
+        <tr><td><code>alarms</code></td><td>Keep the extension responsive under Manifest V3 lifecycle limits</td></tr>
+        <tr><td><code>contextMenus</code></td><td>Manual save from the page context menu</td></tr>
+        <tr><td><code>notifications</code></td><td>Optional local notifications (secondary to in-popup alerts)</td></tr>
+        <tr><td><code>downloads</code></td><td>Save exported files you request</td></tr>
+        <tr><td><code>offscreen</code></td><td>Reliability helper for service worker lifecycle (no archive upload)</td></tr>
+      </tbody>
+    </table>
+    <h3>Host permissions</h3>
+    <p>Access is limited to supported AI platforms and Google Forms for optional feedback:</p>
+    <table>
+      <thead>
+        <tr><th>Domain</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><code>https://chatgpt.com/*</code></td><td>ChatGPT</td></tr>
+        <tr><td><code>https://chat.openai.com/*</code></td><td>ChatGPT (legacy URLs)</td></tr>
+        <tr><td><code>https://claude.ai/*</code></td><td>Claude</td></tr>
+        <tr><td><code>https://gemini.google.com/*</code></td><td>Gemini</td></tr>
+        <tr><td><code>https://copilot.microsoft.com/*</code></td><td>Microsoft Copilot</td></tr>
+        <tr><td><code>https://www.perplexity.ai/*</code></td><td>Perplexity</td></tr>
+        <tr><td><code>https://docs.google.com/*</code></td><td>Optional user-initiated feedback submission only</td></tr>
+      </tbody>
+    </table>
+    <p>We do <strong>not</strong> request <code>&lt;all_urls&gt;</code>, browsing history, or broad cookie access beyond what is required for extension operation on permitted hosts.</p>
+
+    <h2>Third-Party Services &amp; Platform Independence</h2>
+    <h3>Optional feedback (Google Forms)</h3>
+    <p>If you submit feedback through the extension, your submission is processed by Google Forms. That transmission is <strong>initiated by you</strong>, is <strong>separate from your conversation archive</strong>, and is governed by <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google&rsquo;s privacy policy</a>.</p>
+    <h3>Supported AI platforms</h3>
+    <p>NexusRecall is <strong>independent</strong> and <strong>not affiliated with</strong> OpenAI, Anthropic, Google, Microsoft, Perplexity, or any supported AI platform. Your use of those services remains subject to each platform&rsquo;s own terms and privacy policies.</p>
+    <p>NexusRecall does not grant you any rights to use AI platforms beyond the rights you already have with those services. <strong>You are responsible for using each service in accordance with its applicable terms.</strong></p>
+
+    <h2>Your Data Rights</h2>
+    <table>
+      <thead>
+        <tr><th>Right</th><th>How</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Access</strong></td><td>View all saved conversations in the extension</td></tr>
+        <tr><td><strong>Export (portability)</strong></td><td>Export all data as JSON; export conversations as Markdown or copy rich text</td></tr>
+        <tr><td><strong>Delete (erasure)</strong></td><td>Delete individual conversations or all local data with confirmation</td></tr>
+        <tr><td><strong>Control</strong></td><td>Turn auto-save on or off by platform, use manual save, set retention, choose platforms, configure notifications</td></tr>
+        <tr><td><strong>No account lock-in</strong></td><td>No NexusRecall account; uninstall removes local extension data</td></tr>
+      </tbody>
+    </table>
+
+    <h2>Children&rsquo;s Privacy</h2>
+    <p>NexusRecall is not intended for children under 13. We do not knowingly collect personal information from children under 13.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this policy from time to time by revising the &ldquo;Last Updated&rdquo; date and posting the updated policy in the extension repository and store listing materials.</p>
+
+    <h2>Contact</h2>
+    <p><strong>Developer:</strong> Portola Software<br>
+    <strong>Contact:</strong> <a href="mailto:portolasw@gmail.com">portolasw@gmail.com</a><br>
+    <strong>Project:</strong> NexusRecall Chrome Extension</p>
+    <p>For security vulnerabilities, use responsible disclosure (do not file public issues for security bugs).</p>
+
+    <h2>Compliance</h2>
+    <p>This extension is designed with reference to:</p>
+    <ul>
+      <li>Chrome Web Store Developer Program Policies</li>
+      <li>GDPR-style principles (local control, export, deletion)</li>
+      <li>CCPA-style expectations for transparent data practices</li>
+    </ul>
+
+    <p class="note"><strong>Note:</strong> This privacy policy applies to the NexusRecall Chrome extension. Your use of ChatGPT, Claude, Gemini, Microsoft Copilot, Perplexity, and other third-party services is governed by their respective terms and privacy policies.</p>
+  </main>
+</body>
+</html>
