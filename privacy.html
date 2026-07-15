@@ -89,7 +89,7 @@
 <body>
   <main>
     <h1>Privacy Policy for NexusRecall</h1>
-    <p class="meta"><strong>Last Updated:</strong> July 9, 2026<br><strong>Version:</strong> 0.2.x (Beta)</p>
+    <p class="meta"><strong>Last Updated:</strong> July 15, 2026<br><strong>Version:</strong> 0.3.x (Beta)</p>
 
     <h2>Overview</h2>
     <p>NexusRecall (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is a Chrome browser extension that helps you keep a <strong>private local archive</strong> of conversations you access while using supported AI assistant websites.</p>
@@ -98,8 +98,9 @@
 
     <h2>Your Data, Your Control</h2>
     <ul>
-      <li><strong>Local archive:</strong> Saved conversations are stored in your Chrome browser profile on this device (IndexedDB and Chrome extension storage).</li>
-      <li><strong>Export:</strong> Download your archive as JSON (Settings &rarr; Export All Data) or export individual conversations as Markdown, rich text, or print/PDF.</li>
+      <li><strong>Current Records (local archive):</strong> Saved conversations are stored in your Chrome browser profile on this device (IndexedDB and Chrome extension storage).</li>
+      <li><strong>Backup File:</strong> Create a recovery copy of your Current Records to a file location you choose (Settings &rarr; Backup &amp; Restore). Restoring from a Backup File can replace or merge Current Records. Creating a Backup File does not remove anything from Current Records, and NexusRecall does not host your Backup Files.</li>
+      <li><strong>Export:</strong> Advanced raw JSON export (Settings &rarr; Data Management) for data portability, or export individual conversations as Markdown, rich text, or print/PDF.</li>
       <li><strong>Delete:</strong> Delete individual conversations or all local data (Settings &rarr; Privacy &amp; Data Management).</li>
       <li><strong>Turn off auto-save:</strong> Disable auto-save for all platforms or for specific platforms at any time.</li>
       <li><strong>Manual save:</strong> Save individual conversations yourself via keyboard shortcut or context menu.</li>
@@ -116,6 +117,7 @@
       <tbody>
         <tr><td><strong>Saved conversations</strong></td><td>Messages and metadata from supported platforms you access while auto-save is enabled or when you save manually</td></tr>
         <tr><td><strong>Settings &amp; preferences</strong></td><td>Auto-save toggles, retention period, theme, platform preferences</td></tr>
+        <tr><td><strong>Backup catalog metadata</strong></td><td>Local indicators for Backup File status (for example last verified backup); does not store Backup File contents in the cloud</td></tr>
         <tr><td><strong>UI state</strong></td><td>Interface state such as selected conversation or scroll position</td></tr>
         <tr><td><strong>Saving status metadata</strong></td><td>Local indicators used to show auto-save and storage status in Settings</td></tr>
       </tbody>
@@ -130,9 +132,10 @@
     <h2>How We Use Your Data</h2>
     <p>All use of locally stored data is to provide extension functionality:</p>
     <ul>
-      <li><strong>Save &amp; organize</strong> conversations in your local archive</li>
+      <li><strong>Save &amp; organize</strong> conversations in your local archive (Current Records)</li>
       <li><strong>Search &amp; filter</strong> your saved conversations</li>
-      <li><strong>Export</strong> conversations in supported formats</li>
+      <li><strong>Create Backup Files / restore</strong> for recovery or moving to a new browser profile</li>
+      <li><strong>Export</strong> conversations in supported formats (including advanced raw JSON)</li>
       <li><strong>Show saving status &amp; storage information</strong> in Settings</li>
       <li><strong>Apply your retention and platform preferences</strong></li>
     </ul>
@@ -162,8 +165,8 @@
           <td>If you choose to submit feedback in the extension, that submission is sent to <strong>Google Forms</strong> (Google LLC). Feedback may include rating, category, free-text comments, and optional name/email you enter. <strong>Feedback is separate from your local conversation archive</strong> and is not required to use the extension.</td>
         </tr>
         <tr>
-          <td><strong>Export / download</strong></td>
-          <td>Files you export are saved via Chrome&rsquo;s download mechanism to locations you choose on your device.</td>
+          <td><strong>Backup / export / download</strong></td>
+          <td>Backup Files and other exports you request are saved via Chrome&rsquo;s download mechanism to locations you choose on your device. NexusRecall does not upload those files to NexusRecall servers.</td>
         </tr>
       </tbody>
     </table>
@@ -197,10 +200,10 @@
       <li><strong>Uninstall:</strong> Removing the extension clears extension data from your Chrome profile.</li>
       <li><strong>No cloud backup:</strong> We do not retain copies of your archive after local deletion.</li>
     </ul>
-    <p><strong>Warning:</strong> Uninstalling the extension, clearing Chrome data, switching browser profiles, or losing your device may permanently remove your archive unless you have exported a backup.</p>
+    <p><strong>Warning:</strong> Uninstalling the extension, clearing Chrome data, switching browser profiles, or losing your device may permanently remove your Current Records unless you have created a Backup File (or another export) that you still control.</p>
 
     <h2>Permissions</h2>
-    <p>NexusRecall requests permissions needed for auto-save, manual save, search, export, and saving status features on supported sites.</p>
+    <p>NexusRecall requests permissions needed for auto-save, manual save, search, Backup File / export, and saving status features on supported sites.</p>
     <h3>Extension permissions</h3>
     <table>
       <thead>
@@ -212,7 +215,7 @@
         <tr><td><code>scripting</code></td><td>Run extension logic on supported AI assistant websites only</td></tr>
         <tr><td><code>alarms</code></td><td>Keep the extension responsive under Manifest V3 lifecycle limits</td></tr>
         <tr><td><code>contextMenus</code></td><td>Manual save from the page context menu</td></tr>
-        <tr><td><code>downloads</code></td><td>Save exported files you request</td></tr>
+        <tr><td><code>downloads</code></td><td>Save Backup Files and other exported files you request</td></tr>
         <tr><td><code>offscreen</code></td><td>Reliability helper for service worker lifecycle (no archive upload)</td></tr>
       </tbody>
     </table>
@@ -252,7 +255,7 @@
       </thead>
       <tbody>
         <tr><td><strong>Access</strong></td><td>View all saved conversations in the extension</td></tr>
-        <tr><td><strong>Export (portability)</strong></td><td>Export all data as JSON; export conversations as Markdown or copy rich text</td></tr>
+        <tr><td><strong>Export (portability)</strong></td><td>Create a Backup File / restore; advanced raw JSON export; export conversations as Markdown or copy rich text</td></tr>
         <tr><td><strong>Delete (erasure)</strong></td><td>Delete individual conversations or all local data with confirmation</td></tr>
         <tr><td><strong>Control</strong></td><td>Turn auto-save on or off by platform, use manual save, set retention, choose platforms</td></tr>
         <tr><td><strong>No account lock-in</strong></td><td>No NexusRecall account; uninstall removes local extension data</td></tr>
