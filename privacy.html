@@ -89,7 +89,7 @@
 <body>
   <main>
     <h1>Privacy Policy for NexusRecall</h1>
-    <p class="meta"><strong>Last Updated:</strong> July 16, 2026<br><strong>Version:</strong> 0.3.x (Beta)</p>
+    <p class="meta"><strong>Last Updated:</strong> July 24, 2026<br><strong>Version:</strong> 0.4.x (Beta)</p>
 
     <h2>Overview</h2>
     <p>NexusRecall (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is a Chromium browser extension for Google Chrome and Microsoft Edge that helps you keep a <strong>private local archive</strong> of conversations you access while using supported AI assistant websites.</p>
@@ -168,6 +168,10 @@
           <td><strong>Backup / export / download</strong></td>
           <td>Backup Files and other exports you request are saved via your browser&rsquo;s download mechanism to locations you choose on your device. NexusRecall does not upload those files to NexusRecall servers.</td>
         </tr>
+        <tr>
+          <td><strong>Optional Companion (same device)</strong></td>
+          <td>If you install the NexusRecall Companion desktop app and enable pairing, the extension may send a one-way Current Records mirror to that app over Native Messaging on your machine only. This does not transmit Current Records to NexusRecall servers. Core extension features work without Companion.</td>
+        </tr>
       </tbody>
     </table>
     <p>We do not use third-party analytics or advertising trackers for your saved conversations.</p>
@@ -203,7 +207,7 @@
     <p><strong>Warning:</strong> Uninstalling the extension, clearing browser data, switching browser profiles, or losing your device may permanently remove your Current Records unless you have created a Backup File (or another export) that you still control.</p>
 
     <h2>Permissions</h2>
-    <p>NexusRecall requests permissions needed for auto-save, manual save, search, Backup File / export, and saving status features on supported sites.</p>
+    <p>NexusRecall requests permissions needed for auto-save, manual save, search, Backup File / export, saving status features on supported sites, and optional local Companion pairing.</p>
     <h3>Extension permissions</h3>
     <table>
       <thead>
@@ -217,6 +221,7 @@
         <tr><td><code>contextMenus</code></td><td>Manual save from the page context menu</td></tr>
         <tr><td><code>downloads</code></td><td>Save Backup Files and other exported files you request</td></tr>
         <tr><td><code>offscreen</code></td><td>Reliability helper for service worker lifecycle (no archive upload)</td></tr>
+        <tr><td><code>nativeMessaging</code></td><td>Optional local communication with the NexusRecall Companion desktop app on the same machine (when you enable and pair it) for a one-way Current Records mirror &mdash; not required for core save/search/Backup; no NexusRecall cloud</td></tr>
       </tbody>
     </table>
     <h3>Host permissions</h3>
