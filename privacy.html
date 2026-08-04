@@ -89,18 +89,19 @@
 <body>
   <main>
     <h1>Privacy Policy for NexusRecall</h1>
-    <p class="meta"><strong>Last Updated:</strong> July 24, 2026<br><strong>Version:</strong> 0.4.x (Beta)</p>
+    <p class="meta"><strong>Last Updated:</strong> August 3, 2026<br><strong>Version:</strong> 0.4.x (Beta)</p>
 
     <h2>Overview</h2>
-    <p>NexusRecall (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is a Chromium browser extension for Google Chrome and Microsoft Edge that helps you keep a <strong>private local archive</strong> of conversations you access while using supported AI assistant websites.</p>
-    <p><strong>Your saved conversation archive stays on your device.</strong> NexusRecall does not operate a cloud conversation archive, does not require an account, and <strong>does not transmit your saved conversation archive to NexusRecall servers or third-party storage services</strong>.</p>
-    <p>NexusRecall runs in your browser while you use supported AI assistant websites. Auto-save, search, export, and related features require the extension to interact with those websites in your browser. That is separate from storing your archive locally in your browser profile.</p>
+    <p>NexusRecall (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;us&rdquo;) is a Chromium browser extension for Google Chrome and Microsoft Edge that helps you keep a <strong>private local Library</strong> of conversations you access while using supported AI assistant websites.</p>
+    <p><strong>Your Current Records stay on your device.</strong> NexusRecall does not operate a NexusRecall cloud, does not require an account, and <strong>does not transmit your Current Records to NexusRecall servers or third-party storage services</strong>.</p>
+    <p>NexusRecall runs in your browser while you use supported AI assistant websites. Auto-save, search, export, Backup File, and related features require the extension to interact with those websites in your browser. That is separate from storing Current Records locally in your browser profile.</p>
 
     <h2>Your Data, Your Control</h2>
     <ul>
       <li><strong>Current Records (local archive):</strong> Saved conversations are stored in your browser profile on this device (IndexedDB and extension storage).</li>
-      <li><strong>Backup File:</strong> Create a recovery copy of your Current Records to a file location you choose (Settings &rarr; Backup &amp; Restore). Restoring from a Backup File can replace or merge Current Records. Creating a Backup File does not remove anything from Current Records, and NexusRecall does not host your Backup Files.</li>
-      <li><strong>Export:</strong> Advanced raw JSON export (Settings &rarr; Data Management) for data portability, or export individual conversations as Markdown, rich text, or print/PDF.</li>
+      <li><strong>Backup File:</strong> Create a recovery copy of your Current Records to a Backup &amp; Archives folder you choose (Settings &rarr; Backup &amp; Archives). When you enable automatic Backup updates, NexusRecall can update that Backup File when your Library changes. Restoring from a Backup File can replace or merge Current Records. Creating a Backup File does not remove anything from Current Records, and NexusRecall does not host your Backup Files.</li>
+      <li><strong>Archives:</strong> Optionally move older conversations out of Current Records into Archive Files in the same Backup &amp; Archives folder (Ask each time or Automatic), so everyday storage stays responsive. You can restore selected records when the folder is reachable.</li>
+      <li><strong>Export:</strong> Advanced raw JSON export (Settings &rarr; Data Management) for data portability, or export conversations as Markdown (one conversation, or conversations in a folder / Unfiled), rich text, or print/PDF.</li>
       <li><strong>Delete:</strong> Delete individual conversations or all local data (Settings &rarr; Privacy &amp; Data Management).</li>
       <li><strong>Turn off auto-save:</strong> Disable auto-save for all platforms or for specific platforms at any time.</li>
       <li><strong>Manual save:</strong> Save individual conversations yourself via keyboard shortcut or context menu.</li>
@@ -116,26 +117,28 @@
       </thead>
       <tbody>
         <tr><td><strong>Saved conversations</strong></td><td>Messages and metadata from supported platforms you access while auto-save is enabled or when you save manually</td></tr>
+        <tr><td><strong>Folders &amp; local titles</strong></td><td>Optional folder assignment (including Unfiled) and local title rename in NexusRecall &mdash; does not change titles on assistant websites</td></tr>
+        <tr><td><strong>Saved Moments</strong></td><td>Local pins of whole messages or text excerpts (optional title/note); snapshot stays on this device</td></tr>
         <tr><td><strong>Settings &amp; preferences</strong></td><td>Auto-save toggles, retention period, theme, platform preferences</td></tr>
         <tr><td><strong>Backup catalog metadata</strong></td><td>Local indicators for Backup File status (for example last verified backup); does not store Backup File contents in the cloud</td></tr>
         <tr><td><strong>UI state</strong></td><td>Interface state such as selected conversation or scroll position</td></tr>
         <tr><td><strong>Saving status metadata</strong></td><td>Local indicators used to show auto-save and storage status in Settings</td></tr>
       </tbody>
     </table>
-    <p>We do <strong>not</strong> operate analytics or advertising services in beta. We do <strong>not</strong> sell, rent, or share your saved conversation archive.</p>
+    <p>We do <strong>not</strong> operate analytics or advertising services in beta. We do <strong>not</strong> sell, rent, or share your Current Records.</p>
 
     <h2>How Saving Works</h2>
     <p>When auto-save is enabled, NexusRecall saves conversations <strong>while you use supported AI assistant websites</strong> &mdash; for example, conversations you open or actively use on those sites. You can also save conversations yourself with <strong>manual save</strong> at any time.</p>
-    <p>NexusRecall does <strong>not</strong> offer bulk historical import of your entire account history from AI platforms. Your archive grows from conversations you access while using the extension, not from unattended background scans of accounts you have not opened.</p>
-    <p>Supported platforms (beta): ChatGPT, Claude, Gemini, and Perplexity. The Chrome build also supports Microsoft Copilot; the Edge build excludes Copilot because Edge blocks extensions from running on <code>copilot.microsoft.com</code>. Early Experimental support: Google AI Studio (<code>aistudio.google.com</code>), Grok (<code>grok.com</code>), and Vibe (Mistral) on <code>chat.mistral.ai</code> &mdash; see in-app platform status for capture scope.</p>
+    <p>NexusRecall does <strong>not</strong> offer bulk historical import of your entire account history from AI platforms. Current Records grow from conversations you access while using the extension, not from unattended background scans of accounts you have not opened.</p>
+    <p>Supported platforms (beta): ChatGPT, Claude, Gemini, and Perplexity. The Chrome build also supports Microsoft Copilot; the Edge build excludes Copilot because Edge blocks extensions from running on <code>copilot.microsoft.com</code>. Early Experimental support: Google AI Studio (<code>aistudio.google.com</code>), Grok (<code>grok.com</code>), Vibe (Mistral) on <code>chat.mistral.ai</code>, and Meta AI (<code>www.meta.ai</code> / <code>meta.ai</code>) &mdash; see in-app platform status for capture scope.</p>
 
     <h2>How We Use Your Data</h2>
     <p>All use of locally stored data is to provide extension functionality:</p>
     <ul>
-      <li><strong>Save &amp; organize</strong> conversations in your local archive (Current Records)</li>
+      <li><strong>Save, search, and mark</strong> conversations in Current Records (folders, Saved Moments, and related local features)</li>
       <li><strong>Search &amp; filter</strong> your saved conversations</li>
       <li><strong>Create Backup Files / restore</strong> for recovery or moving to a new browser profile</li>
-      <li><strong>Export</strong> conversations in supported formats (including advanced raw JSON)</li>
+      <li><strong>Export</strong> conversations in supported formats (including Markdown for a folder / Unfiled, and advanced raw JSON)</li>
       <li><strong>Show saving status &amp; storage information</strong> in Settings</li>
       <li><strong>Apply your retention and platform preferences</strong></li>
     </ul>
@@ -143,14 +146,14 @@
 
     <h2>What We Do Not Do</h2>
     <ul>
-      <li>We do <strong>not</strong> upload your saved conversation archive to NexusRecall servers (we do not operate such servers for your archive).</li>
+      <li>We do <strong>not</strong> upload your Current Records to NexusRecall servers (we do not operate such servers for your records).</li>
       <li>We do <strong>not</strong> provide cloud sync or a NexusRecall-hosted backup of your chats.</li>
-      <li>We do <strong>not</strong> sell or share your saved conversation archive with third parties.</li>
+      <li>We do <strong>not</strong> sell or share your Current Records with third parties.</li>
       <li>We do <strong>not</strong> use your conversations for advertising.</li>
     </ul>
 
     <h2>Network Activity</h2>
-    <p><strong>Important distinction:</strong> NexusRecall does not send your <strong>saved archive</strong> to NexusRecall servers or third-party storage services. Your browser still communicates with websites as part of normal browsing and extension operation.</p>
+    <p><strong>Important distinction:</strong> NexusRecall does not send your <strong>Current Records</strong> to NexusRecall servers or third-party storage services. Your browser still communicates with websites as part of normal browsing and extension operation.</p>
     <table>
       <thead>
         <tr><th>Activity</th><th>What happens</th></tr>
@@ -162,7 +165,7 @@
         </tr>
         <tr>
           <td><strong>Optional feedback</strong></td>
-          <td>If you choose to submit feedback in the extension, that submission is sent to <strong>Google Forms</strong> (Google LLC). Feedback may include rating, category, free-text comments, and optional name/email you enter. <strong>Feedback is separate from your local conversation archive</strong> and is not required to use the extension.</td>
+          <td>If you choose to submit feedback in the extension, that submission is sent to <strong>Google Forms</strong> (Google LLC). Feedback may include rating, category, free-text comments, and optional name/email you enter. <strong>Feedback is separate from your Current Records</strong> and is not required to use the extension.</td>
         </tr>
         <tr>
           <td><strong>Backup / export / download</strong></td>
@@ -202,7 +205,7 @@
       <li><strong>When enabled:</strong> Conversations older than your chosen period (1&ndash;365 days, default suggestion 90 days) are deleted <strong>immediately</strong> when you save or enable the setting.</li>
       <li><strong>Manual deletion:</strong> Delete individual conversations or all data at any time.</li>
       <li><strong>Uninstall:</strong> Removing the extension clears extension data from your browser profile.</li>
-      <li><strong>No cloud backup:</strong> We do not retain copies of your archive after local deletion.</li>
+      <li><strong>No cloud backup:</strong> We do not retain copies of your Current Records after local deletion.</li>
     </ul>
     <p><strong>Warning:</strong> Uninstalling the extension, clearing browser data, switching browser profiles, or losing your device may permanently remove your Current Records unless you have created a Backup File (or another export) that you still control.</p>
 
@@ -241,6 +244,8 @@
         <tr><td><code>https://aistudio.google.com/*</code></td><td>Google AI Studio</td></tr>
         <tr><td><code>https://alkalimakersuite-pa.clients6.google.com/*</code></td><td>Google AI Studio (MakerSuite API used by the site)</td></tr>
         <tr><td><code>https://grok.com/*</code></td><td>Grok</td></tr>
+        <tr><td><code>https://www.meta.ai/*</code></td><td>Meta AI</td></tr>
+        <tr><td><code>https://meta.ai/*</code></td><td>Meta AI (apex host)</td></tr>
         <tr><td><code>https://docs.google.com/*</code></td><td>Optional user-initiated feedback submission only</td></tr>
       </tbody>
     </table>
@@ -248,9 +253,9 @@
 
     <h2>Third-Party Services &amp; Platform Independence</h2>
     <h3>Optional feedback (Google Forms)</h3>
-    <p>If you submit feedback through the extension, your submission is processed by Google Forms. That transmission is <strong>initiated by you</strong>, is <strong>separate from your conversation archive</strong>, and is governed by <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google&rsquo;s privacy policy</a>.</p>
+    <p>If you submit feedback through the extension, your submission is processed by Google Forms. That transmission is <strong>initiated by you</strong>, is <strong>separate from your Current Records</strong>, and is governed by <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google&rsquo;s privacy policy</a>.</p>
     <h3>Supported AI platforms</h3>
-    <p>NexusRecall is <strong>independent</strong> and <strong>not affiliated with</strong> OpenAI, Anthropic, Google, Microsoft, Perplexity, Mistral, xAI, or any supported AI platform. Your use of those services remains subject to each platform&rsquo;s own terms and privacy policies.</p>
+    <p>NexusRecall is <strong>independent</strong> and <strong>not affiliated with</strong> OpenAI, Anthropic, Google, Microsoft, Meta, Perplexity, Mistral, xAI, or any supported AI platform. Your use of those services remains subject to each platform&rsquo;s own terms and privacy policies.</p>
     <p>NexusRecall does not grant you any rights to use AI platforms beyond the rights you already have with those services. <strong>You are responsible for using each service in accordance with its applicable terms.</strong></p>
 
     <h2>Your Data Rights</h2>
@@ -288,7 +293,7 @@
       <li>CCPA-style expectations for transparent data practices</li>
     </ul>
 
-    <p class="note"><strong>Note:</strong> This privacy policy applies to the NexusRecall browser extension for Google Chrome and Microsoft Edge. Your use of ChatGPT, Claude, Gemini, Microsoft Copilot, Perplexity, Google AI Studio, Grok, Vibe (Mistral), and other third-party services is governed by their respective terms and privacy policies.</p>
+    <p class="note"><strong>Note:</strong> This privacy policy applies to the NexusRecall browser extension for Google Chrome and Microsoft Edge. Your use of ChatGPT, Claude, Gemini, Microsoft Copilot, Perplexity, Google AI Studio, Grok, Vibe (Mistral), Meta AI, and other third-party services is governed by their respective terms and privacy policies.</p>
   </main>
 </body>
 </html>
